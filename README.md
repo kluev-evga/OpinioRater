@@ -1,15 +1,40 @@
-# api_yamdb
+# OpinioRater
 
 [![python version](https://img.shields.io/static/v1?label=Python&message=3.11.2&color=97ca00&style=for-the-badge)](https://python.org)
 [![django version](https://img.shields.io/static/v1?label=DJANGO&message=3.2.0&color=77ca00&style=for-the-badge)](https://www.djangoproject.com/)
 [![drf version](https://img.shields.io/static/v1?label=DRF&message=3.12.4&color=97ca00&style=for-the-badge)](https://www.django-rest-framework.org/)
 ![api version](https://img.shields.io/static/v1?label=API%20VERSION&message=1.0.0&color=77ca00&style=for-the-badge)
-[![licence](https://img.shields.io/static/v1?label=LICENSE&message=MIT&color=97ca00&style=for-the-badge)](https://github.com/kluevEVGA/api_final_yatube/blob/master/LICENSE)
+[![licence](https://img.shields.io/static/v1?label=LICENSE&message=MIT&color=97ca00&style=for-the-badge)](https://github.com/kluev-evga/api_final_yatube/blob/master/LICENSE)
 
 ## О ПРОЕКТЕ
 
-Проект реализует REST API backend сервис на базе встроенной в Python sqlite базы данных и DjangoResetFramework. В
-проекте подключена авторизация по JWT токенам.
+Проект - это RESTful API, разработанный для сбора отзывов пользователей о различных произведениях, таких как книги,
+фильмы и музыка. Этот API предоставляет удобный и эффективный способ для пользователей выражать свое мнение и оценивать
+произведения в различных категориях развлечений.
+
+Основные функции API включают:
+
+1. Регистрация и аутентификация пользователей: Пользователи могут создавать учетные записи и аутентифицироваться для
+   доступа к сервису.
+
+2. Добавление отзывов: Пользователи могут оставлять отзывы и комментарии к книгам, фильмам и музыке, выражая свои мнения
+   и рецензии.
+
+3. Рейтинг и оценка: Пользователи могут проставлять оценки и рейтинги произведениям, что позволяет другим пользователям
+   легче находить популярные и рекомендуемые работы.
+
+4. Поиск и фильтрация: API предоставляет возможность поиска произведений по различным критериям, таким как жанр, автор,
+   режиссер и многое другое.
+
+5. Интеграция с произведениями: С помощью API можно получать информацию о книгах, фильмах и музыке из внешних
+   источников, обогащая базу данных произведений.
+
+6. Аналитика и отчеты: Администраторы могут получать отчеты о активности пользователей и популярности произведений.
+
+Этот проект предоставляет платформу для обмена мнениями и рекомендациями, помогая пользователям находить интересные
+произведения и делиться своими впечатлениями.
+
+Stack проекта: Django, Django-rest-framework, simpleJWT, sqlite
 
 ### Команда разработки:
 
@@ -19,7 +44,7 @@
 <a href="https://github.com/lesinn1k" title='Никита'>
 <img src="https://avatars.githubusercontent.com/u/118612161?v=4" width="100" alt="developer Никита">
 </a>
-<a href='https://github.com/kluevEVGA' title='Евгений'>
+<a href='https://github.com/kluev-evga' title='Евгений'>
 <img src="https://avatars.githubusercontent.com/u/97233323?v=4" width="100" alt="developer Евгений">
 </a>
 
@@ -32,7 +57,7 @@
 _Клонировать проект_
 
 ```shell
-git clone https://github.com/kluevEVGA/api_yamdb.git
+git clone https://github.com/kluev-evga/api_yamdb.git
 ```
 
 _Установить локальное окружение_
@@ -84,7 +109,7 @@ python3 manage.py runserver
 _Клонировать проект_
 
 ```shell
-git clone https://github.com/kluevEVGA/api_yamdb.git
+git clone https://github.com/kluev-evga/api_yamdb.git
 ```
 
 _Установить локальное окружение_
@@ -131,7 +156,7 @@ python3 manage.py runserver
 База данных построена на основе SQLITE.  
 [Схема](https://dbdocs.io/kluev.evga/api_aymdb?view=relationships) базы данных создана при
 помощи [DBML](https://www.dbml.org/docs/#project-definition) синтаксиса и приложения [dbdocs](https://dbdocs.io/).  
-Файл схеммы [graph-db.dbml](https://github.com/kluevEVGA/api_yamdb/blob/master/graph-db.dbml).
+Файл схеммы [graph-db.dbml](https://github.com/kluev-evga/api_yamdb/blob/master/graph-db.dbml).
 
 [Установка](https://dbdocs.io/docs) и запуск приложения dbdocs:
 
@@ -188,7 +213,7 @@ user-exists?-->no-->create-user-->Email_confirmation_code;
   "email": "user@example.com",
   "username": "john_doe"
 }
-```
+```🔊
 
 JWT
 
@@ -207,4 +232,4 @@ api/v1/auth/token-->POST-->JWT-token;
 ## ЛИЦЕНЗИЯ
 
 Распространяется по `MIT` лицензии. Для дополнительной информации
-смотри: [LICENSE](https://github.com/kluevEVGA/api_yamdb/blob/master/LICENSE)
+смотри: [LICENSE](https://github.com/kluev-evga/api_yamdb/blob/master/LICENSE)
